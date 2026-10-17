@@ -1,0 +1,23 @@
+[package]
+name = "nikpak"
+version = "1.1.0"
+edition = "2021"
+description = "nikpak - fast, encrypted archiver for the .nik format (zstd + Argon2id + XChaCha20-Poly1305)"
+rust-version = "1.75"
+
+[dependencies]
+zstd = { version = "0.13", features = ["zstdmt"] }
+chacha20poly1305 = { version = "0.10", features = ["stream"] }
+argon2 = "0.5"
+rand = "0.8"
+zeroize = "1"
+rpassword = "7"
+crc32fast = "1"
+glob = "0.3"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

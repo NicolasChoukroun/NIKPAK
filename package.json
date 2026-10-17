@@ -1,0 +1,12 @@
+{
+  "name": "nikpak",
+  "version": "1.0.0",
+  "private": true,
+  "description": "npm convenience wrapper: npm run build compiles nikpak with Cargo (Rust does the real work)",
+  "scripts": {
+    "build": "cargo build --release",
+    "test": "cargo test --release",
+    "dist": "powershell -NoProfile -ExecutionPolicy Bypass -File build.ps1",
+    "clean": "cargo clean"
+  }
+}
