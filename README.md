@@ -3,7 +3,7 @@
 # NIKPAK
 
 **Fast, media-aware, encrypted archiving for the `.nik` format.**
-Smaller than RAR 7 on audio, images and tracker music. Quantum-resistant encryption. One small executable for Windows, macOS and Linux.
+Smaller than RAR 7 on general files, audio, images and tracker music. Quantum-resistant encryption. One small executable for Windows, macOS and Linux.
 
 ![Rust](https://img.shields.io/badge/written%20in-Rust-b7410e)
 ![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0b1f3a)
